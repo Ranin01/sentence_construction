@@ -1,0 +1,133 @@
+/* Main body style */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(145deg, #8b4513, #fce3c0); /* Gradient background */
+  background-image: url('C:/Users/rabik/Downloads/1/fill-the-blank-app/src/sketch-7942431_1280.jpg'); /* Adjust the path if needed */
+  background-size: 40%; /* Adjust size of the Rangoli pattern */
+  background-position: right bottom; /* Position it at the bottom-right corner */
+  background-repeat: no-repeat; /* Don't repeat the image */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container holding the main content */
+.container {
+  width: 90%;
+  max-width: 700px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border: 3px solid #f2a1c1;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  position: relative; /* For positioning relative to parent container */
+}
+
+/* Title styling */
+.title {
+  color: #C7934E;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-family: 'Great Vibes', cursive; /* Apply calligraphic font */
+  letter-spacing: 1px;
+  font-weight: normal;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Optional: Adding a slight shadow for more effect */
+}
+
+/* Timer styling */
+.timer {
+  font-size: 18px;
+  color: #5b5b5b;
+  margin-bottom: 20px;
+}
+
+/* Sentence with blanks styling */
+.sentence {
+  font-size: 22px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* Styling for the blank spaces */
+.blank {
+  background: #ffe4b5;
+  border: 2px dashed #f0ad4e;
+  padding: 6px 12px;
+  margin: 0 6px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+.blank:hover {
+  background: #f8e1a1;
+}
+
+/* Button styling */
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.option-btn {
+  padding: 8px 16px;
+  border: none;
+  background-color: #f88f7d;
+  color: white;
+  border-radius: 8px;
+  font-style: italic;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.option-btn:hover {
+  background-color: #f56d4f;
+}
+
+.option-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Next button styling */
+.next-btn {
+  padding: 12px 24px;
+  background: #ff7b7b;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.next-btn:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+/* Results and scoring */
+.score {
+  font-size: 22px;
+  margin: 15px 0;
+  color: #333;
+}
+
+.result {
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #f88f7d;
+  padding: 12px;
+  text-align: left;
+  border-radius: 6px;
+}
